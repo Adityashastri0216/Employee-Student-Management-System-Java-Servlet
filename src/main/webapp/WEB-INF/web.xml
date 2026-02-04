@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+
+  <display-name>ServletProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.xhtml</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+   		<servlet-name>StudentServlet</servlet-name>
+   		<servlet-class>Student.StudentServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>StudentServlet</servlet-name>
+   		<url-pattern>/CreateStudent</url-pattern>
+   </servlet-mapping>
+   
+   
+  <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>Student.UpdateStudentServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/UpdateStudent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>Student.DeleteStudentServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudent</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ViewStudentsServlet</servlet-name>
+        <servlet-class>Student.ViewStudentsServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ViewStudentsServlet</servlet-name>
+        <url-pattern>/ViewStudent</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+   		<servlet-name>AddEmployeeServlet</servlet-name>
+   		<servlet-class>FirstServlet.AddEmployeeServlet</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>AddEmployeeServlet</servlet-name>
+   		<url-pattern>/AddEmployeeServlet</url-pattern>
+   </servlet-mapping>
+   
+  <servlet>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <servlet-class>FirstServlet.UpdateEmployeeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateEmployeeServlet</servlet-name>
+        <url-pattern>/UpdateEmployeeServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <servlet-class>FirstServlet.DeleteEmployeeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeServlet</servlet-name>
+        <url-pattern>/DeleteEmployee</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>ViewEmployeesServlet</servlet-name>
+        <servlet-class>FirstServlet.ViewEmployeesServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ViewEmployeesServlet</servlet-name>
+        <url-pattern>/ViewEmployees</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+h1:hover{
+	color: red;
+	height:100;
+}
+.btn1{
+	color:black;
+	height: 50px;
+	width: 115px;
+}
+
+.btn2{
+	color:black;
+	height: 50px;
+	width: 115px;
+}
+
+.btn3{
+	color:black;
+	height: 50px;
+	width: 115px;
+}
+
+.btn1:hover{
+	background-color: green;
+}
+
+.btn2:hover{
+	background-color: orange;
+}
+.btn3:hover{
+	background-color: red;
+}
